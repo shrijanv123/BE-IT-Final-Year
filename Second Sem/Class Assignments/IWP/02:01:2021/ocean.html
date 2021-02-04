@@ -2,23 +2,29 @@
 <html>
 <head>
 	<title>Facts about Oceans!</title>
+	<link rel="stylesheet" href="content.css">
 </head>
 <body bgcolor="#E6E6E6">
-		<font face="Helvetica" color="#323232" size="+2">
-			<h1 align="center">
-				<b>Fun Facts about Oceans!</b>
-			</h1>
-		</font>
-	<hr>
 
-	<font face="Sans serif" size="2.5" color="White">
-		<nav>
-			<h2><a href="web.html">Home</a></h2>
-			<h2><a href="animals.html">Animals</a></h2>
-			<h2><a href="india.html">India</a></h2>
-			<h2><a onclick="Back()">Back</a></h2>
-		</nav>
-	</font>
+<body>
+	<div class="navbar">
+		<a href="web.html">Home</a>
+		<a href="animals.html">Animals</a>
+		<a href="india.html">India</a>
+		<a class="active" href="ocean.html">Oceans</a>
+		<a class="active" onclick="Back()" style="float: right; background-color: #4CAF50">Back</a>
+		<div class="dropdown">
+			<button class="dropbtn">Support 
+	    		<i class="fa fa-caret-down"></i>
+	    	</button>
+	    <div class="dropdown-content">
+	      	<a href="contact.html">Contact Us</a>
+	      	<a href="#">About Us</a>
+	    </div>
+	  	</div> 
+	</div>
+
+	<h1 class="heading"><b>10 Facts about Oceans</b></h1>
 
 	<script>
 		function Back()
@@ -28,7 +34,7 @@
 	</script>
 
 	<font face="Sans serif">
-		<h2 align="center">
+		<h2 style="padding-left: 350px; padding-right: 200px;padding-top: 50px">
 			<ol>
 				<li>Earth's oceans are unique in the Universe — as far as we know.</li><br>
 				<img src="i1.jpg" alt="Ocean" height="420" width="640">

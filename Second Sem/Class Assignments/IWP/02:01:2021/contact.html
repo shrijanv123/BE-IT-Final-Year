@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Register</title>
+	<link rel="stylesheet" href="form.css">
+	<script type="text/javascript" src="validate.js"></script>
+</head>
+<body>
+
+	<div class="navbar">
+		<a href="web.html">Home</a>
+		<a href="animals.html">Animals</a>
+		<a href="india.html">India</a>
+		<a href="ocean.html">Oceans</a>
+		<a class="active" onclick="Back()" style="float: right; background-color: #4CAF50">Back</a>
+		<div class="dropdown">
+			<div class="active">
+			<button class="dropbtn">Support 
+	    		<i class="fa fa-caret-down"></i>
+	    	</button></div>
+	    <div class="dropdown-content">
+	      	<a href="contact.html">Contact Us</a>
+	      	<a href="#">About Us</a>
+	    </div>
+	  	</div> 
+	</div>
+
+	<h1 class="heading">Registration Details</h1>
+
+<form>
+	<div class="forms">
+		<fieldset class="formCSS" style="padding-top: 30px;">
+			<legend class="title">Personal Information</legend>
+			
+				First Name:<br>
+				<input class="field" type="text" id="fname" placeholder="First Name" size="30">
+				<br><br>
+				
+				Last Name:<br>
+				<input class="field" type="text" id="lname" placeholder="Last Name" size="30">
+				<br><br>
+
+				Gender:<br><br>
+				<input class="field" type="radio" id="gender" value="male">Male  <input class="field" type="radio" name="gender" value="female">Female  <input class="field" type="radio" name="gender" value="other">Other    
+				<br><br>
+
+				Date of birth:<br>
+				<input class="field" type="date" id="bday" size="30">
+				<br><br>
+
+				Education-level:<br>
+				<input class="field" list="eduLevel" id="Education-level" placeholder="Select one from the dropdown" size="30">
+				<datalist id="eduLevel">
+					<option value="Below 10th level"></option>
+					<option value="Below 12th level"></option>
+					<option value="Graduate"></option>
+					<option value="Diploma holder"></option>
+					<option value="Post-graduate"></option>
+					<option value="Other..."></option>
+				</datalist>
+				<br><br>
+				
+
+		</fieldset>
+
+		<fieldset class="formCSS" style="padding-top: 30px;">
+			<legend class="title">Contact Details</legend>
+				Email-id:<br>
+				<input class="field" type="email" id="email" placeholder="Email-id" size="30">
+				<br><br>
+				
+				Phone no:<br>
+				<input class="field" type="tel" id="phno" placeholder="10-digit phone no." size="30" pattern="[0-9]{10}" onblur="validatePhoneNo()">
+				<br><br>
+
+				Address:<br>
+				<textarea name="Address" rows="3" cols="33" placeholder="Address"></textarea>
+				<br><br>
+		</fieldset>
+
+		<fieldset class="formCSS">
+			<legend class="title">Account Details</legend>
+				Username:<br>
+				<input class="field" type="text" id="user" placeholder="Username" size="30">
+				<br><br>
+
+				Password:<br>
+				<input class="field" type="password" id="pswd1" placeholder="Min. 8 characters" size="30" oncopy="return disableCopy();" id="pwd" onpaste="return disablePaste();" oncut="return disableCut();" oncontextmenu="return disableContextMenu();>
+				<br><br>
+				
+				Re-enter the password:<br>
+				<input class="field" type="password" id="pswd2" placeholder="Same as above" size="30" oncopy="return disableCopy();" id="pwd" onpaste="return disablePaste();" oncut="return disableCut();" oncontextmenu="return disableContextMenu();"/>
+				<br><br>
+		</fieldset>
+
+		<div class="formCSS" style="padding-top: 30px; padding-bottom: 50px;">
+			<input type="checkbox" id="terms">I accept all terms and conditions
+		</div>
+
+		<input class="btn" type="submit" value="Submit" onclick="return validateForm()">
+		<input class="btn" type="reset" value="Reset">
+
+	</div>
+</form>
+
+</body>
+</html>
