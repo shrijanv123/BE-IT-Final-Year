@@ -2,14 +2,89 @@
 <html>
 <head>
 	<title>Facts about Animals!</title>
-	<link rel="stylesheet" href="content.css">
 </head>
+
 <body bgcolor="#E6E6E6">
+	<style>
+		h1{
+			text-align: center;
+			font-size: 55px;
+			font-family: sans-serif;
+			top: 0; 
+			text-decoration-line: underline;
+		}
+	</style>
+
+	<h1><b>10 Facts about Animals</b></h1>
+
+<style>
+	body{
+		font-family: Arial, Helvetica, sans-serif;
+	}
+	.navbar{
+		overflow: hidden;
+		background-color: #333;
+		position: sticky;
+		top: 0;
+	}
+	.navbar a {
+		float: left;
+		font-size: 20px;
+		color: white;
+		text-align: center;
+		padding: 14px 16px;
+		text-decoration: none;
+	}
+	.dropdown{
+		float: left;
+		overflow: hidden;
+	}
+	.dropdown .dropbtn{
+		font-size: 20px;  
+	 	border: none;
+	  	outline: none;
+	  	color: white;
+	  	padding: 14px 16px;
+	  	background-color: inherit;
+		font-family: inherit;
+		margin: 0;
+	}
+	.navbar a:hover, .dropdown:hover .dropbtn{
+	 	background-color: #111;
+	}
+	.dropdown-content{
+		display: none;
+		position: absolute;
+		background-color: #f9f9f9;
+		min-width: 160px;
+		box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+		z-index: 1;
+	}
+	.dropdown-content a{
+		float: none;
+		color: black;
+		padding: 12px 16px;
+		text-decoration: none;
+		display: block;
+		text-align: left;
+	}
+	.dropdown-content a:hover{
+		background-color: #ddd;
+	}
+	.dropdown:hover .dropdown-content{
+		display: block;
+	}
+	img{
+		padding: 5px;
+		margin: 5px;
+		border: 2px solid #323232;
+	}
+</style>
 
 <body>
 	<div class="navbar">
 		<a href="web.html">Home</a>
-		<a class="active" href="animals.html">Animals</a>
+		<a href="animals.html">Animals</a>
 		<a href="india.html">India</a>
 		<a href="ocean.html">Oceans</a>
 		<a class="active" onclick="Back()" style="float: right; background-color: #4CAF50">Back</a>
@@ -18,13 +93,11 @@
 	    		<i class="fa fa-caret-down"></i>
 	    	</button>
 	    <div class="dropdown-content">
-	      	<a href="contact.html">Contact Us</a>
+	      	<a href="#">Help</a>
 	      	<a href="#">About Us</a>
 	    </div>
 	  	</div> 
 	</div>
-
-	<h1 class="heading"><b>10 Facts about Animals</b></h1>
 
 	<script>
 		function Back()
